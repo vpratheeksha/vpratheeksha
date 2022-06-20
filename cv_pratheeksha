@@ -1,0 +1,84 @@
+# Text Variables
+Header = '>>>This CV was generated entirely in Python. For full sourcecode, view my github'
+Name = 'V G Pratheeksha'
+Contact = 'India\npratheeksha1809@gmail.com\n+91 76394 40589\nlinkedin'
+ProjectsHeader = 'COURSE PROJECTS'
+ProjectOneTitle = 'Small is beautiful'
+ProjectOneDesc = "Surveyed 10 small, medium and micro-scale enterprises and developed a \nsolution to overcome the problems faced by them.In par with British economist\nand statistician E.F. Schumacher’s book Small Is Beautiful,the concept is often\nused to champion small, appropriate technologies or polities that are believed to\nempower people more."
+ProjectTwoTitle = 'Home Depot'
+ProjectTwoDesc = 'This is a detailed case study analysis of Home Depot Inc. The management \nfunctions were examined to identify the effort towards the achievement of the\ngoals of the organization. The study also probed into the dynamics of the\nmanagement team in relation to the diverse workforce and its environment. The\nstudy revealed the importance of good decision making after strategic planning\nand implementation of a designed plan.'
+ProjectThreeTitle = 'Application of principles of management'
+ProjectThreeDesc = 'This paper is focused on the application of the management principles of\nHenri Fayol in Tata International Ltd. The study used descriptive statistics\nand the Kruskal-Wallis test for the analysis.'
+WorkHeader = 'EXPERIENCE'
+WorkOneTitle = 'Grm Infotech, India / Summer Associate'"   ""                     "'12/2019 - 02/2020'
+WorkOneDesc = 'Worked with marketing team in all stages of campaigns under the direct guidance\nof CEO and managed funds worth $95,000. Supported the marketing team to\ncreate and implement marketing strategies, performed market analysis,negotiated\ndeals with vendors and research on competition'
+WorkTwoTitle = 'Ipower Investments, India / Intern - Growth Advisory'"  "'12/2020 - 02/2021'
+WorkTwoDesc = "Provided insightful contribution to develop, expand and maintain marketing\nchannels, which helped the organisation to achieve the prestigious MDRT award.\nHelped in generating potential leads by reaching out to the desired target audience\non social media, which helped in sales of more than $1 million worth of insurance\nproducts. Provided innovative ideas to strengthen the organisation’s relationship\nwith its 2 lakhs+ clients."
+WorkThreeTitle = 'iFortis Worldwide / Sales and Marketing Intern'"          ""  "'08/2021 - 09/2021'
+WorkThreeDesc = 'Conducted market research and promoted events that created world records.'
+WorkFourTitle = 'Ipower Investments, India  /  Internal Audit Associate'" "" "'10/2021 - 02/2022' 
+WorkFourDesc = 'Identifying and evaluating key risks and contributing to establishing audit scope.\nPerformance of audits including detailed walkthroughs and flow charts of key\nprocesses of test procedures for key controls, execution of testing, identification\nand reporting of issues. On-going communication with business line management\ndiscussing the status of business changes as well as perform follow-up on\npreviously identified audit issues. Support of a variety of functions in planning,\nfieldwork and reporting on global and regional reviews.'
+EduHeader = 'EDUCATION'
+EduOneTitle = 'Institute of Chartered Accountants of India, Chartered Accountant'
+EduOneTime = '2018-Present'
+EduOneDesc = 'Level 1 - 64%'
+EduTwoTitle = 'Indira Gandhi National Open University, India,\nBachelors of Commerce '
+EduTwoTime = "2019- June 2022 (Expected)"
+EduTwoDesc = 'Expected cumulative GPA 3.6/4'
+SkillsHeader = 'Skills'
+SkillsDesc = 'Python, SQL, Zoho Books, VB,\nTally, HTML, CSS, C, C++,\nProbability/Statistics, Ms Office.'
+ExtrasTitle = 'Extra-Curricular'
+ExtrasDesc = '- Investment Banking Virtual\n Internship Experience, Citi APAC.\n-  Programming for Everybody \n(Getting Started with Python),\nUniversity of Michigan.\n- Investment Banking Virtual\nInternship Experience, JP Morgan.\n- Information Technology\nTraining Programme certificate,\nICAI India.\n- Certificate for Office\n Automation Through ICT,\nGovernment of India.\n- Topper in SOF International\nCompanies Secretaries Olympiad.\n- Freelance Tutor at Chegg Inc.\nVolunteer Tutor,CSC,Government of\nIndia’s Digital India Initiative for\neducating rural poor children.\n- Independent researcher at\nSASTRA University and writing\na paper on corporate governance\ncompliances by the pharma industry\nand its impact on their growth under\nthe guidance of Associate\nProfessor Dr Srinivasa Kumar.\n- Developing India’s first virtual\nsupport group for people\nsuffering from mental health\ndistress and free mental\nhealth platform that works 24*7.'
+# Setting style for bar graphs
+import matplotlib.pyplot as plt
+plt.show()
+# set font
+plt.rcParams['font.family'] = 'sans-serif'
+plt.rcParams['font.sans-serif'] = 'STIXGeneral'
+
+fig, ax = plt.subplots(figsize=(8.5, 11))
+
+# Decorative Lines
+ax.axvline(x=.5, ymin=0, ymax=1, color='#007ACC', alpha=0.0, linewidth=50)
+plt.axvline(x=.99, color='#000000', alpha=0.5, linewidth=300)
+plt.axhline(y=.88, xmin=0, xmax=1, color='#ffffff', linewidth=3)
+
+# set background color
+ax.set_facecolor('white')
+
+# remove axes
+plt.axis('off')
+plt.annotate(Header, (.02,.98), weight='regular', fontsize=8, alpha=.6)
+plt.annotate(Name, (.02,.94), weight='bold', fontsize=20)
+plt.annotate(Contact, (.7,.906), weight='regular', fontsize=11, color='#ffffff')
+plt.annotate(ProjectsHeader, (.02,.90), weight='bold', fontsize=10, color='red')
+plt.annotate(ProjectOneTitle, (.02,.880), weight='bold', fontsize=10)
+plt.annotate(ProjectOneDesc, (.04,.80), weight='regular', fontsize=9)
+plt.annotate(ProjectTwoTitle, (.02,.785), weight='bold', fontsize=10)
+plt.annotate(ProjectTwoDesc, (.04,.69), weight='regular', fontsize=9)
+plt.annotate(ProjectThreeTitle, (.02,.672), weight='bold', fontsize=10)
+plt.annotate(ProjectThreeDesc, (.04,.623), weight='regular', fontsize=9)
+plt.annotate(WorkHeader, (.02,.60), weight='bold', fontsize=10, color='red')
+plt.annotate(WorkOneTitle, (.02,.585), weight='bold', fontsize=10)
+plt.annotate(WorkOneDesc, (.04,.520), weight='regular', fontsize=9)
+plt.annotate(WorkTwoTitle, (.02,.499), weight='bold', fontsize=10)
+plt.annotate(WorkTwoDesc, (.04,.405), weight='regular', fontsize=9)
+plt.annotate(WorkThreeTitle, (.02,.385), weight='bold', fontsize=10)
+plt.annotate(WorkThreeDesc, (.04,.370), weight='regular', fontsize=9)
+plt.annotate(WorkFourTitle, (.02,.355), weight='bold', fontsize=10)
+plt.annotate(WorkFourDesc, (.04,.247), weight='regular', fontsize=9)
+plt.annotate(EduHeader, (.02,.225), weight='bold', fontsize=10, color='red')
+plt.annotate(EduOneTitle, (.02,.200), weight='bold', fontsize=10)
+plt.annotate(EduOneTime, (.02,.180), weight='regular', fontsize=9, alpha=.6)
+plt.annotate(EduOneDesc, (.04,.165), weight='regular', fontsize=9)
+plt.annotate(EduTwoTitle, (.02,.130), weight='bold', fontsize=10)
+plt.annotate(EduTwoTime, (.02,.115), weight='regular', fontsize=9, alpha=.6)
+plt.annotate(EduTwoDesc, (.04,.100), weight='regular', fontsize=9)
+plt.annotate(SkillsHeader, (.7,.80), weight='bold', fontsize=10, color='#ffffff')
+plt.annotate(SkillsDesc, (.7,.75), weight='regular', fontsize=10, color='#ffffff')
+plt.annotate(ExtrasTitle, (.7,.60), weight='bold', fontsize=10, color='#ffffff')
+plt.annotate(ExtrasDesc, (.7,.100), weight='regular', fontsize=9, color='#ffffff')
+
+
+
+plt.savefig('Pratheeksha_CV.pdf', dpi=300, bbox_inches='tight')
