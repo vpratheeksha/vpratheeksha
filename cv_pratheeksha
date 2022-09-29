@@ -20,13 +20,15 @@ WorkFourTitle = 'Ipower Investments, India  /  Internal Audit Associate'" "" "'1
 WorkFourDesc = 'Identifying and evaluating key risks and contributing to establishing audit scope.\nPerformance of audits including detailed walkthroughs and flow charts of key\nprocesses of test procedures for key controls, execution of testing, identification\nand reporting of issues. On-going communication with business line management\ndiscussing the status of business changes as well as perform follow-up on\npreviously identified audit issues. Support of a variety of functions in planning,\nfieldwork and reporting on global and regional reviews.'
 EduHeader = 'EDUCATION'
 EduOneTitle = 'Institute of Chartered Accountants of India, Chartered Accountant'
-EduOneTime = '2018-Present'
+EduOneTime = '2018-2019'
 EduOneDesc = 'Level 1 - 64%'
-EduTwoTitle = 'Indira Gandhi National Open University, India,\nBachelors of Commerce '
-EduTwoTime = "2019- June 2022 (Expected)"
-EduTwoDesc = 'Expected cumulative GPA 3.6/4'
+EduTwoTitle = 'Indira Gandhi National Open University, Bachelors of Commerce '
+EduTwoTime = "2019- 2022"
+EduTwoDesc = 'Grade: First Division'
+EduThreeTitle = 'Indian Institute of Technology (IITM), Diploma in Data Science'
+EduThreeTime = '2022-2023 (August - Expected)'
 SkillsHeader = 'Skills'
-SkillsDesc = 'Python, SQL, Zoho Books, VB,\nTally, HTML, CSS, C, C++,\nProbability/Statistics, Ms Office.'
+SkillsDesc = 'Python, Zoho Books, VB,\nTally, HTML, CSS, C, C++,\nProbability/Statistics, Ms Office.'
 ExtrasTitle = 'Extra-Curricular'
 ExtrasDesc = '- Investment Banking Virtual\n Internship Experience, Citi APAC.\n-  Programming for Everybody \n(Getting Started with Python),\nUniversity of Michigan.\n- Investment Banking Virtual\nInternship Experience, JP Morgan.\n- Information Technology\nTraining Programme certificate,\nICAI India.\n- Certificate for Office\n Automation Through ICT,\nGovernment of India.\n- Topper in SOF International\nCompanies Secretaries Olympiad.\n- Freelance Tutor at Chegg Inc.\nVolunteer Tutor,CSC,Government of\nIndia’s Digital India Initiative for\neducating rural poor children.\n- Independent researcher at\nSASTRA University and writing\na paper on corporate governance\ncompliances by the pharma industry\nand its impact on their growth under\nthe guidance of Associate\nProfessor Dr Srinivasa Kumar.\n- Developing India’s first virtual\nsupport group for people\nsuffering from mental health\ndistress and free mental\nhealth platform that works 24*7.'
 # Setting style for bar graphs
@@ -68,12 +70,14 @@ plt.annotate(WorkThreeDesc, (.04,.370), weight='regular', fontsize=9)
 plt.annotate(WorkFourTitle, (.02,.355), weight='bold', fontsize=10)
 plt.annotate(WorkFourDesc, (.04,.247), weight='regular', fontsize=9)
 plt.annotate(EduHeader, (.02,.225), weight='bold', fontsize=10, color='red')
-plt.annotate(EduOneTitle, (.02,.200), weight='bold', fontsize=10)
-plt.annotate(EduOneTime, (.02,.180), weight='regular', fontsize=9, alpha=.6)
-plt.annotate(EduOneDesc, (.04,.165), weight='regular', fontsize=9)
-plt.annotate(EduTwoTitle, (.02,.130), weight='bold', fontsize=10)
-plt.annotate(EduTwoTime, (.02,.115), weight='regular', fontsize=9, alpha=.6)
-plt.annotate(EduTwoDesc, (.04,.100), weight='regular', fontsize=9)
+plt.annotate(EduOneTitle, (.02,.205), weight='bold', fontsize=10)
+plt.annotate(EduOneTime, (.02,.190), weight='regular', fontsize=9, alpha=.6)
+plt.annotate(EduOneDesc, (.04,.175), weight='regular', fontsize=9)
+plt.annotate(EduTwoTitle, (.02,.160), weight='bold', fontsize=10)
+plt.annotate(EduTwoTime, (.02,.145), weight='regular', fontsize=9, alpha=.6)
+plt.annotate(EduTwoDesc, (.04,.130), weight='regular', fontsize=9)
+plt.annotate(EduThreeTitle, (.02,.115), weight='bold', fontsize=10)
+plt.annotate(EduThreeTime, (.02,.100), weight='regular', fontsize=9, alpha=.6)
 plt.annotate(SkillsHeader, (.7,.80), weight='bold', fontsize=10, color='#ffffff')
 plt.annotate(SkillsDesc, (.7,.75), weight='regular', fontsize=10, color='#ffffff')
 plt.annotate(ExtrasTitle, (.7,.60), weight='bold', fontsize=10, color='#ffffff')
